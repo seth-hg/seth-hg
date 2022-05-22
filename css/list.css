@@ -1,0 +1,10 @@
+.list .title {
+    font-size: large;
+    text-decoration: none;
+}
+
+.list a.tag {
+    text-decoration: none;
+    display:inline;
+    color: darkgray;
+}
