@@ -1,0 +1,90 @@
+@import url(./list.css);
+@import url(./syntax-monokailight.css);
+
+header a {
+    text-decoration:none;
+}
+
+div#container {
+    margin: 0 10% 0 10%;
+}
+
+.pagination {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+.pagination li {
+    padding: 0 5px 0 5px;
+}
+
+.pagination li a {
+    text-decoration:none;
+}
+
+.pagination li.active a {
+    pointer-events: none;
+    cursor: default;
+    color: inherit;
+}
+
+.pagination li.active a:hover, .pagination li.active a:active {
+    color: gray;
+}
+
+.article {
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.article .tags {
+    margin-left: 5px;
+}
+
+.article img {
+    max-width: 100%;
+    box-sizing: border-box;
+    border: solid 1px lightgray;
+    padding: 4px;
+}
+
+.article > table {
+    width: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: solid 1px lightgray;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.article > table th, .article > table td {
+    border: solid 1px lightgray;
+    padding: 4px;
+}
+
+.article > div {
+    width: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.article > pre {
+    width: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.article sup {
+    padding-left: 2px;
+}
+
+.footnotes p {
+    margin: 4px 0 0 0;
+    color:dimgray;
+}

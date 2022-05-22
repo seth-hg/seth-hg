@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="main" role="main">
+  <section class="list {{ .Kind }}-list">
+    {{- range .Paginator.Pages }}
+    <p>
+      <a class="title" href="{{ .Permalink | relURL }}">{{ .Title }}</a>
+      <br>
+      <time>{{ .Date.Format (default "2006/01/02" $.Site.Params.dateFormat) }}</time>
+      {{- if .Params.tags }}
+        {{- range .Params.tags }}
+        <a class="tag" href="{{ "/" | relURL }}tags/{{ . | urlize }}/">
+          <i class="fas fa-tag"></i>
+          #{{ . }}
+        </a>
+        {{- end }}
+      {{- end }}
+    </p>
+    {{- end }}
+  </section>
+  {{ template "_internal/pagination.html" . }}
+</div>
+{{ end }}

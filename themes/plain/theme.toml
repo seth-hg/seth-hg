@@ -1,0 +1,15 @@
+name = "Plain"
+description = "A plain old theme for Hugo"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = ""
+  homepage = ""
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
