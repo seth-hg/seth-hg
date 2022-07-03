@@ -3,4 +3,5 @@
 docker 和 docker-compose，用于部署 Milvus sqlite3，用于存储向量之外的数据 Python 3.7 或以上版本 torch 和 transformers，用于 BERT 模型 bottle，用于开发一个简单 Web 查询服务 pymilvus，Milvus 的 Python SDK milvus-cli，Milvus 命令行工具 首先需要部署 Milvus 服务。由于数据量不是很大，因此使用 standealone 模式部署一个单节点服务就可以满足需求。下载 milvus-standalone-docker-compose.yaml 文件到部署目录，然后执行如下命令启动服务：
 docker-compose up -d 服务启动后 Milvus 的数据会存储在当前目录下的 volumes 子目录里，要确保有足够的存储空间。
 也可以顺便部署一个 Milvus 的 Web 前端 Attu：
-docker run -p 8000:3000 -e HOST_URL=http://{ your machine IP }:8000 -e MILVUS_URL={your machine IP}:19530 zilliz/attu:latest 接下来用 pip 安装需要的 Python 库和工具：</description></item></channel></rss>
+docker run -p 8000:3000 -e HOST_URL=http://{ your machine IP }:8000 -e MILVUS_URL={your machine IP}:19530 zilliz/attu:latest 接下来用 pip 安装需要的 Python 库和工具：
+pip3 install torch transformers bottle pymilvus milvus-cli 本文使用的数据集是 GitHub 上的中文诗歌古典文集数据库，把整个仓库 clone 到项目目录下。</description></item></channel></rss>
