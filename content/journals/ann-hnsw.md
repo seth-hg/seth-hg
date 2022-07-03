@@ -1,7 +1,6 @@
 ---
 title: "向量检索算法HNSW"
 date: 2022-06-01T15:57:59+08:00
-draft: true
 ---
 
 {{< math.inline >}}
