@@ -50,7 +50,7 @@ div#container {
 .article img {
     max-width: 100%;
     box-sizing: border-box;
-    border: solid 1px lightgray;
+    border: none;
     padding: 4px;
 }
 
